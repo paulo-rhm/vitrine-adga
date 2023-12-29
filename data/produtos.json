@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Produto 1",
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/18/99/0f/b4/favada.jpg",
+    "description": "Descrição do Produto 1"
+  },
+  {
+    "name": "Produto 2",
+    "image": "https://www.nidelins.com.br/wp-content/uploads/2015/07/anama5.jpg",
+    "description": "Descrição do Produto 2"
+  },
+  {
+    "name": "Produto 3",
+    "image": "https://www.queroreceita.com.br/_next/image?url=https%3A%2F%2Fstatic.queroreceita.com.br%2Fmedia%2FbJhoL5NbaHcuzGdqIpSx.jpg&w=640&q=75.jpg",
+    "description": "Descrição do Produto 3"
+  },
+  {
+    "name": "Produto 4",
+    "image": "https://static.wixstatic.com/media/c19c5e_f2a5aeae64af44fbb8e2218250d75040~mv2.jpg/v1/fit/w_850%2Ch_500%2Cal_c%2Cq_80,enc_auto/file.jpg",
+    "description": "Descrição do Produto 4"
+  },
+  {
+    "name": "Produto 5",
+    "image": "https://s3-sa-east-1.amazonaws.com/loja2/407dc846c0632d924c53504b62186f26.jpg",
+    "description": "Descrição do Produto 4"
+  },
+  {
+    "name": "Produto 6",
+    "image": "https://roldao.com.br/wp-content/uploads/2022/03/Capa-correta-3.png",
+    "description": "Descrição do Produto 4"
+  }
+]

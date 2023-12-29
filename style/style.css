@@ -1,0 +1,110 @@
+:root {
+  --cor-primaria: #000; /* preto */
+  --cor-secundaria: #ff0; /* amarelo */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.vitrine {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-container {
+  overflow: hidden;
+  width: 80%;
+  max-width: 600px;
+}
+
+.slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* Ajuste para exibir 3 produtos ao mesmo tempo */
+}
+
+.product {
+  box-sizing: border-box;
+  flex: 1 0 33.33%; /* Distribui os produtos igualmente no slide */
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block; /* Alterado para empilhar os itens verticalmente em telas menores */
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Adiciona regras de estilo para telas menores */
+@media (max-width: 768px) {
+  .vitrine {
+    padding: 20px;
+  }
+
+  .slide-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .product {
+    flex: 1 0 100%; /* Exibe um produto por vez em telas menores */
+  }
+
+  header {
+    padding: 10px 20px; /* Aumenta o espaçamento interno para melhor legibilidade em telas menores */
+  }
+
+  nav li {
+    display: inline-block; /* Restaura o layout em linha para telas menores */
+    margin-right: 10px;
+  }
+
+  footer {
+    padding: 10px 20px; /* Aumenta o espaçamento interno para melhor legibilidade em telas menores */
+  }
+}
