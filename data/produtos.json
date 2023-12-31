@@ -1,13 +1,13 @@
 [
   {
     "name": "Produto 1",
-    "image": "https://media-cdn.tripadvisor.com/media/photo-s/18/99/0f/b4/favada.jpg",
-    "description": "Descrição do Produto 1"
+    "image": "../assets/adga-01.jpg",
+    "description": "A suavidade do gin combinada harmoniosamente com a vivacidade cítrica de limões e laranjas frescos, criando uma sinfonia refrescante que dança delicadamente em cada gole"
   },
   {
     "name": "Produto 2",
     "image": "https://www.nidelins.com.br/wp-content/uploads/2015/07/anama5.jpg",
-    "description": "Descrição do Produto 2"
+    "description": "jaca Produto 2"
   },
   {
     "name": "Produto 3",
