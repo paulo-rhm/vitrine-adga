@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .vitrine {
@@ -16,38 +17,66 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .slide-container {
+  position: relative;
   overflow: hidden;
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  /* max-width: 800px; */
+  /* left: -15%; */
 }
 
 .slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 300%; /* Ajuste para exibir 3 produtos ao mesmo tempo */
+  margin: 10% 0;
 }
 
 .product {
   box-sizing: border-box;
   flex: 1 0 33.33%; /* Distribui os produtos igualmente no slide */
   padding: 20px;
+  display: flex; /* Adicionado para usar flexbox */
+  /* flex-direction: column; Empilhar os itens verticalmente */
   text-align: center;
+  width: 100%;
+
 }
 
+.product p {
+  position: relative;
+  right: 20%;
+  /* left: 10%; */
+  /* color: red; */
+  margin: 10% 0 0 15%;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+.product p, h3 {
+  flex-grow: 1; /* Faz com que a descrição ocupe o espaço restante verticalmente */
+
+}
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
+  margin: 20px; /* Adicionado espaçamento entre a imagem e o texto */
+  width: 50%; /* Ajuste para fazer a imagem ocupar 50% da largura da tela */
 }
 
 /* Estilo do cabeçalho */
 header {
-  background-color: var(--cor-primaria);
+  background-color: none;
   color: var(--cor-secundaria);
   padding: 10px;
   text-align: center;
+  position: fixed;
+  left: 45%;
+  top: 0;
+  margin: 1rem 0;
+  z-index: 100;
 }
 
 h1 {
